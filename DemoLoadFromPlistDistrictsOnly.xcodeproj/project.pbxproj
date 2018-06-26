@@ -8,12 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		DB2DEC1620E1DAE400C5D254 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2DEC1520E1DAE400C5D254 /* AppDelegate.swift */; };
-		DB2DEC1820E1DAE400C5D254 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2DEC1720E1DAE400C5D254 /* ViewController.swift */; };
 		DB2DEC1B20E1DAE400C5D254 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB2DEC1920E1DAE400C5D254 /* Main.storyboard */; };
 		DB2DEC1D20E1DAE400C5D254 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB2DEC1C20E1DAE400C5D254 /* Assets.xcassets */; };
 		DB2DEC2020E1DAE400C5D254 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB2DEC1E20E1DAE400C5D254 /* LaunchScreen.storyboard */; };
 		DB2DEC2B20E1DAE400C5D254 /* DemoLoadFromPlistDistrictsOnlyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2DEC2A20E1DAE400C5D254 /* DemoLoadFromPlistDistrictsOnlyTests.swift */; };
 		DB2DEC3620E1DAE400C5D254 /* DemoLoadFromPlistDistrictsOnlyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2DEC3520E1DAE400C5D254 /* DemoLoadFromPlistDistrictsOnlyUITests.swift */; };
+		DB2DEC4420E1DB0600C5D254 /* Districts.plist in Resources */ = {isa = PBXBuildFile; fileRef = DB2DEC4320E1DB0600C5D254 /* Districts.plist */; };
+		DB2DEC4620E1DB2B00C5D254 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2DEC4520E1DB2B00C5D254 /* TableViewController.swift */; };
+		DB2DEC4A20E1DBB700C5D254 /* District.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2DEC4920E1DBB700C5D254 /* District.swift */; };
+		DB2DEC4C20E1DC4700C5D254 /* DataSevice.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2DEC4B20E1DC4700C5D254 /* DataSevice.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +39,6 @@
 /* Begin PBXFileReference section */
 		DB2DEC1220E1DAE400C5D254 /* DemoLoadFromPlistDistrictsOnly.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoLoadFromPlistDistrictsOnly.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB2DEC1520E1DAE400C5D254 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		DB2DEC1720E1DAE400C5D254 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DB2DEC1A20E1DAE400C5D254 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DB2DEC1C20E1DAE400C5D254 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB2DEC1F20E1DAE400C5D254 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +49,10 @@
 		DB2DEC3120E1DAE400C5D254 /* DemoLoadFromPlistDistrictsOnlyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DemoLoadFromPlistDistrictsOnlyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB2DEC3520E1DAE400C5D254 /* DemoLoadFromPlistDistrictsOnlyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoLoadFromPlistDistrictsOnlyUITests.swift; sourceTree = "<group>"; };
 		DB2DEC3720E1DAE400C5D254 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB2DEC4320E1DB0600C5D254 /* Districts.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Districts.plist; sourceTree = "<group>"; };
+		DB2DEC4520E1DB2B00C5D254 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		DB2DEC4920E1DBB700C5D254 /* District.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = District.swift; sourceTree = "<group>"; };
+		DB2DEC4B20E1DC4700C5D254 /* DataSevice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSevice.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,12 +103,14 @@
 		DB2DEC1420E1DAE400C5D254 /* DemoLoadFromPlistDistrictsOnly */ = {
 			isa = PBXGroup;
 			children = (
+				DB2DEC4820E1DB9E00C5D254 /* Controller */,
+				DB2DEC4720E1DB4000C5D254 /* Model */,
 				DB2DEC1520E1DAE400C5D254 /* AppDelegate.swift */,
-				DB2DEC1720E1DAE400C5D254 /* ViewController.swift */,
 				DB2DEC1920E1DAE400C5D254 /* Main.storyboard */,
 				DB2DEC1C20E1DAE400C5D254 /* Assets.xcassets */,
 				DB2DEC1E20E1DAE400C5D254 /* LaunchScreen.storyboard */,
 				DB2DEC2120E1DAE400C5D254 /* Info.plist */,
+				DB2DEC4320E1DB0600C5D254 /* Districts.plist */,
 			);
 			path = DemoLoadFromPlistDistrictsOnly;
 			sourceTree = "<group>";
@@ -123,6 +131,23 @@
 				DB2DEC3720E1DAE400C5D254 /* Info.plist */,
 			);
 			path = DemoLoadFromPlistDistrictsOnlyUITests;
+			sourceTree = "<group>";
+		};
+		DB2DEC4720E1DB4000C5D254 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DB2DEC4920E1DBB700C5D254 /* District.swift */,
+				DB2DEC4B20E1DC4700C5D254 /* DataSevice.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DB2DEC4820E1DB9E00C5D254 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				DB2DEC4520E1DB2B00C5D254 /* TableViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -234,6 +259,7 @@
 			files = (
 				DB2DEC2020E1DAE400C5D254 /* LaunchScreen.storyboard in Resources */,
 				DB2DEC1D20E1DAE400C5D254 /* Assets.xcassets in Resources */,
+				DB2DEC4420E1DB0600C5D254 /* Districts.plist in Resources */,
 				DB2DEC1B20E1DAE400C5D254 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,8 +285,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DB2DEC1820E1DAE400C5D254 /* ViewController.swift in Sources */,
+				DB2DEC4C20E1DC4700C5D254 /* DataSevice.swift in Sources */,
+				DB2DEC4620E1DB2B00C5D254 /* TableViewController.swift in Sources */,
 				DB2DEC1620E1DAE400C5D254 /* AppDelegate.swift in Sources */,
+				DB2DEC4A20E1DBB700C5D254 /* District.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
