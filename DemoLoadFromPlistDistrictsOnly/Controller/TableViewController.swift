@@ -20,13 +20,13 @@ class TableViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return DataSevice.share.districts.count
+        return DataService.share.districts.count
     }
 
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-        cell.textLabel?.text = DataSevice.share.districts[indexPath.row].name
+        cell.textLabel?.text = DataService.share.districts[indexPath.row].name
         return cell
     }
 

@@ -8,8 +8,8 @@
 
 import Foundation
 typealias DICT = Dictionary<AnyHashable, Any>
-class DataSevice {
-    static var share: DataSevice = DataSevice()
+class DataService {
+    static var share: DataService = DataService()
     private var _districts: [District]?
     var districts: [District] {
         get {
